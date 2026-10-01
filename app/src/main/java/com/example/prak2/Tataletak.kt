@@ -202,4 +202,4 @@ fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
             modifier = Modifier.padding(top = 16.dp)
         )
     }
-}   
+}
