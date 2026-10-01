@@ -201,3 +201,5 @@ fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
             fontWeight = FontWeight.Bold,
             modifier = Modifier.padding(top = 16.dp)
         )
+    }
+}   
