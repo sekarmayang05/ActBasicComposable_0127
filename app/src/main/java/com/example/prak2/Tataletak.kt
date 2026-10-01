@@ -128,52 +128,29 @@ fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
         id = R.drawable.notasibalok
     )
 
-    Column {
+    Column(
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(16.dp)
+    ) {
 
-        Column {
-
-            // Row 1
-            Row(
-                modifier = modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceEvenly
-            ) {
-                Text(text = "Kol1_Row1_Komponen1")
-                Text(text = "Kol1_Row1_Komponen2")
-                Text(text = "Kol1_Row1_Komponen3")
-            }
-
-            // Row 2
-            Row(
-                modifier = modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceEvenly
-            ) {
-                Text(text = "Kol1_Row2_Komponen1")
-                Text(text = "Kol1_Row2_Komponen2")
-                Text(text = "Kol1_Row2_Komponen3")
-            }
-
-        }
-
-        Box(
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(200.dp)
-                .background(Color.LightGray),
-            contentAlignment = Alignment.Center
+        // Row 1
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly
         ) {
-            Image(
-                painter = gambar,
-                contentDescription = "Notasi Balok",
-                modifier = Modifier.fillMaxWidth(),
-                contentScale = ContentScale.Crop
+            Text(
+                text = "Kol1_Row1_Komponen1",
+                modifier = Modifier.weight(1f)
+            )
+
+            Text(
+                text = "Kol1_Row1_Komponen2",
+                modifier = Modifier.weight(1f)
+            )
+
+            Text(
+                text = "Kol1_Row1_Komponen3",
+                modifier = Modifier.weight(1f)
             )
         }
-
-        Text(
-            text = "Notasi Balok",
-            fontSize = 20.sp,
-            fontWeight = FontWeight.Bold,
-            modifier = Modifier.padding(top = 16.dp)
-        )
-    }
-}
