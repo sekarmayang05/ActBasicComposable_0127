@@ -26,8 +26,14 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun TugasLogin(modifier: Modifier = Modifier) {
     Box(modifier = modifier.fillMaxSize()) {
-    }
 
+        // Gambar latar belakang
+        Image(
+            painter = painterResource(id = R.drawable.bg_kopdes),
+            contentDescription = null,
+            contentScale = ContentScale.Crop,
+            modifier = Modifier.fillMaxSize()
+        )
     Column(
         modifier = Modifier
             .fillMaxSize()
