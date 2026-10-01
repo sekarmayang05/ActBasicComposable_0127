@@ -27,4 +27,18 @@ import androidx.compose.ui.unit.sp
 fun TugasLogin(modifier: Modifier = Modifier) {
     Box(modifier = modifier.fillMaxSize()) {
     }
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(top = 24.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(
+            text = "Login",
+            fontSize = 32.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.Blue
+        )
+    }
 }
