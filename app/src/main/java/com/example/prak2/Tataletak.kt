@@ -153,5 +153,20 @@ fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
             }
 
         }
+
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(200.dp)
+                .background(Color.LightGray),
+            contentAlignment = Alignment.Center
+        ) {
+            Image(
+                painter = gambar,
+                contentDescription = "Notasi Balok",
+                modifier = Modifier.fillMaxWidth(),
+                contentScale = ContentScale.Crop
+            )
+        }
     }
 }
