@@ -124,7 +124,10 @@ fun TataletakRowColumn(modifier: Modifier) {
 fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
 
     val gambar = painterResource(
-        id = drawable.notasibalok
+        id = drawable.notasilabolok
     )
 
+    Column {
+
+    }
 }
