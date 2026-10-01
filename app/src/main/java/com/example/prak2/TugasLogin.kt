@@ -56,5 +56,24 @@ fun TugasLogin(modifier: Modifier = Modifier) {
 
         Spacer(modifier = Modifier.height(40.dp))
 
+        Text(
+            text = "Nama",
+            fontWeight = FontWeight.Bold,
+            color = Color.Red
+        )
+        Text(
+            text = "Sekar Mayang Kumala Dewi",
+            fontWeight = FontWeight.Bold,
+            color = Color.Blue
+        )
+        Text(
+            text = "20240140127",
+            fontSize = 24.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.Black
+        )
+
+        Spacer(modifier = Modifier.height(16.dp))
+
     }
 }
