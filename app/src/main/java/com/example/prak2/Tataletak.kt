@@ -168,5 +168,12 @@ fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
                 contentScale = ContentScale.Crop
             )
         }
+
+        Text(
+            text = "Notasi Balok",
+            fontSize = 20.sp,
+            fontWeight = FontWeight.Bold,
+            modifier = Modifier.padding(top = 16.dp)
+        )
     }
 }
