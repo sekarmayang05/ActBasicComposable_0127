@@ -21,6 +21,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.prak2.R.drawable
 
 @Composable
 fun TataletakColumn(modifier: Modifier) {
@@ -118,4 +119,12 @@ fun TataletakRowColumn(modifier: Modifier) {
             Text(text = "Komponen3Kolom2")
         }
     }
+}
+@Composable
+fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
+
+    val gambar = painterResource(
+        id = drawable.notasibalok
+    )
+
 }
