@@ -44,5 +44,17 @@ fun TugasLogin(modifier: Modifier = Modifier) {
             text = "Ini adalah halaman login,",
             color = Color.White
         )
+
+        Spacer(modifier = Modifier.height(40.dp))
+
+        // Logo UMY
+        Image(
+            painter = painterResource(id = R.drawable.logo_umy),
+            contentDescription = null,
+            modifier = Modifier.size(150.dp)
+        )
+
+        Spacer(modifier = Modifier.height(40.dp))
+
     }
 }
