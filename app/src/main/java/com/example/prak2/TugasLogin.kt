@@ -34,69 +34,74 @@ fun TugasLogin(modifier: Modifier = Modifier) {
             contentScale = ContentScale.Crop,
             modifier = Modifier.fillMaxSize()
         )
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(top = 24.dp),
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        Text(
-            text = "Login",
-            fontSize = 32.sp,
-            fontWeight = FontWeight.Bold,
-            color = Color.Blue
-        )
-        Text(
-            text = "Ini adalah halaman login,",
-            color = Color.White
-        )
-
-        Spacer(modifier = Modifier.height(40.dp))
-
-        // Logo UMY
-        Image(
-            painter = painterResource(id = R.drawable.logo_umy),
-            contentDescription = null,
-            modifier = Modifier.size(150.dp)
-        )
-
-        Spacer(modifier = Modifier.height(40.dp))
-
-        Text(
-            text = "Nama",
-            fontWeight = FontWeight.Bold,
-            color = Color.Red
-        )
-        Text(
-            text = "Sekar Mayang Kumala Dewi",
-            fontWeight = FontWeight.Bold,
-            color = Color.Blue
-        )
-        Text(
-            text = "20240140127",
-            fontSize = 24.sp,
-            fontWeight = FontWeight.Bold,
-            color = Color.Black
-        )
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-        // Gambar bulat
-        Box(
+        Column(
             modifier = Modifier
-                .size(300.dp)
-                .clip(CircleShape)
-                .background(Color(0xFFE6E6F2))
-                .border(4.dp, Color.White, CircleShape)
+                .fillMaxSize()
+                .padding(top = 24.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Image(
-                painter = painterResource(id = R.drawable.TNI),
-                contentDescription = null,
-                contentScale = ContentScale.Fit,
-                modifier = Modifier.fillMaxSize()
+            Text(
+                text = "Login",
+                fontSize = 32.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Blue
             )
+            Text(
+                text = "Ini adalah halaman login,",
+                color = Color.White
+            )
+
+            Spacer(modifier = Modifier.height(40.dp))
+
+            // Logo UMY
+            Image(
+                painter = painterResource(id = R.drawable.logo_umy),
+                contentDescription = null,
+                contentScale = ContentScale.Crop,
+                modifier = Modifier
+                    .size(150.dp)
+                    .clip(CircleShape)
+            )
+
+            Spacer(modifier = Modifier.height(40.dp))
+
+            Text(
+                text = "Nama",
+                fontWeight = FontWeight.Bold,
+                color = Color.Red
+            )
+            Text(
+                text = "Sekar Mayang Kumala Dewi",
+                fontWeight = FontWeight.Bold,
+                color = Color.Blue
+            )
+            Text(
+                text = "20240140127",
+                fontSize = 24.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black
+            )
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            // Gambar bulat
+            Box(
+                modifier = Modifier
+                    .size(300.dp)
+                    .clip(CircleShape)
+                    .background(Color(0xFFE6E6F2))
+                    .border(4.dp, Color.White, CircleShape)
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.tni),
+                    contentDescription = null,
+                    contentScale = ContentScale.Fit,
+                    modifier = Modifier.fillMaxSize()
+                )
+            }
         }
     }
 }
+
 
 
