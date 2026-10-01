@@ -42,7 +42,7 @@ fun TugasLogin(modifier: Modifier = Modifier) {
         ) {
             Text(
                 text = "Login",
-                fontSize = 32.sp,
+                fontSize = 34.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.Blue
             )
@@ -82,7 +82,7 @@ fun TugasLogin(modifier: Modifier = Modifier) {
                 color = Color.Black
             )
 
-            Spacer(modifier = Modifier.height(16.dp))
+            Spacer(modifier = Modifier.height(22.dp))
 
             // Gambar bulat
             Box(
@@ -93,7 +93,7 @@ fun TugasLogin(modifier: Modifier = Modifier) {
                     .border(4.dp, Color.White, CircleShape)
             ) {
                 Image(
-                    painter = painterResource(id = R.drawable.tni),
+                    painter = painterResource(id = R.drawable.foto_baru),
                     contentDescription = null,
                     contentScale = ContentScale.Fit,
                     modifier = Modifier.fillMaxSize()
