@@ -75,5 +75,22 @@ fun TugasLogin(modifier: Modifier = Modifier) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
+        // Gambar bulat
+        Box(
+            modifier = Modifier
+                .size(300.dp)
+                .clip(CircleShape)
+                .background(Color(0xFFE6E6F2))
+                .border(4.dp, Color.White, CircleShape)
+        ) {
+            Image(
+                painter = painterResource(id = R.drawable.TNI),
+                contentDescription = null,
+                contentScale = ContentScale.Fit,
+                modifier = Modifier.fillMaxSize()
+            )
+        }
     }
 }
+
+
