@@ -154,3 +154,42 @@ fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
                 modifier = Modifier.weight(1f)
             )
         }
+
+        // Row 2
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(top = 16.dp),
+            horizontalArrangement = Arrangement.SpaceEvenly
+        ) {
+            Text(
+                text = "Kol1_Row2_Komponen1",
+                modifier = Modifier.weight(1f)
+            )
+
+            Text(
+                text = "Kol1_Row2_Komponen2",
+                modifier = Modifier.weight(1f)
+            )
+
+            Text(
+                text = "Kol1_Row2_Komponen3",
+                modifier = Modifier.weight(1f)
+            )
+        }
+
+// Gambar Notasi Balok
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(200.dp)
+                .padding(top = 16.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            Image(
+                painter = gambar,
+                contentDescription = "Notasi Balok",
+                modifier = Modifier.fillMaxWidth(),
+                contentScale = ContentScale.Fit
+            )
+        }
